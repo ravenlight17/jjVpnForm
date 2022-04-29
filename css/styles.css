@@ -1,3 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text-secondary{
+    font-size: x-small;
+}
+
+.dept-title {
+    color: darkblue;
+}
 .btn-sm{
     color: white;
 }
+
+
+/* .footer-div{
+    display: flex;
+    background-color: darkblue;
+    height: 65px;
+    
+}
+
+.pfooter{
+    align-items: center;
+    justify-content: space-around;
+} */

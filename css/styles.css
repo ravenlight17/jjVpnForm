@@ -5,7 +5,7 @@
 }
 
 .text-secondary{
-    font-size: x-small;
+    font-size: small;
 }
 
 .dept-title {
@@ -13,6 +13,13 @@
 }
 .btn-sm{
     color: white;
+}
+
+
+.footer-div{
+    background-color:  rgb(1, 45, 107);
+    height: 75px;
+    
 }
 
 

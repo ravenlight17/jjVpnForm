@@ -4,23 +4,49 @@
     box-sizing: border-box;
 }
 
+.body{
+    overflow-x:hidden;
+    max-width: 100%;
+}
+
+
 .text-secondary{
     font-size: small;
 }
 
 .dept-title {
-    color: darkblue;
+    color: #012d6b;
 }
+
+.vpn-request-head{
+    color: #00aeef;
+}
+
+/* .labelPc, .location, .number{
+    font-weight: 600;
+} */
+
+label, p{
+    font-weight: 600;
+}
+
 .btn-sm{
     color: white;
+   
 }
 
-
-.footer-div{
-    background-color:  rgb(1, 45, 107);
-    height: 75px;
-    
+.submit-btn{
+    background-color: #00aeef;
 }
+
+.inline{
+    display: inline-block;
+
+}
+
+/* .textbox{
+    width: ;
+} */
 
 /* .yourInfo{
     margin-left:66px;
@@ -29,6 +55,40 @@
 .yourRequest{
     margin-left:66px;
 }
+
+.div-pcInput{
+    display: flex;
+}
+
+
+.labelPc{
+    /* width: 25px;
+    flex-direction: column; */
+
+    width: 208px;
+    flex-direction: column;
+    margin-right: 25px;
+    /* margin-right: 204px; */
+    /* display: inline-block; */
+
+}
+
+.pcInput{
+    /* width: 275px;
+    margin-left: 25px;
+    flex-direction: column; */
+
+    width: 275px;
+    /* margin-left: -182px; */
+    flex-direction: column;
+}
+
+#footer_div{
+    background-color:  #012d6b;
+    height: 100px;
+       
+}
+
 
 
 /* .footer-div{

@@ -142,19 +142,55 @@
             </select>
           </div>
         </div>
-
-        <div class="row mb-3">
-          
-          <div class="col-sm-10 div-pcInput">
-            <label for="pcHostName" class="col-sm-2 col-form-label labelPc">Name of Campus Computer:</label>
-            <input type="email" class="form-control pcInput " id="pcHostName">
-          </div>
-
-          <p><small class="text-start fst-italic mb-3"><a href="#" class="data-bs-toggle="modal"  data-bs-target="#myModal">How to find your computer name?</a></small></p>
         </div>
 
         <div class="row mb-3">
+          
+          <div class="col-6 col-sm-12">
+          <div class="form-group">
+            
+            <label for="campPC">Name of Campus Computer</label>
+            <input type="text" class="form-control" id="campPC">
+            <p>
+              <small class="text-start fst-italic mb-3">
+                <!---<a href="#" class="data-bs-toggle="modal"  data-bs-target="#myModal">-->
+                  <a href="#" class="modal-test" data-bs-toggle="modal" data-bs-target="#exampleModal">How to find your computer name?</a>
+                </small>
+              </p>
+          
+
+
+
+          </div>
+        </div>
+          <!-- IMPORTANT DONT DELETE -->
+          <!-- <div class="col-sm-10 div-pcInput">
+            <label for="pcHostName" class="col-sm-2 col-form-label labelPc">Name of Campus Computer:</label>
+            <input type="email" class="form-control pcInput " id="pcHostName">
+          </div> -->
+          <!-- IMPORTANT DONT DELETE -->
+          
+          <div class="col-6 col-sm-12">
           <div class="dropdown-center">
+            <label for="campPC">Select Your Home PC Operating System</label>
+            <button class="btn border-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+              Select One
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+              <li><a class="dropdown-item" href="#">Windows 10 S</a></li>
+              <li><a class="dropdown-item" href="#">Windows 10</a></li>
+              <li><a class="dropdown-item" href="#">Windows 8/8.1</a></li>
+              <li><a class="dropdown-item" href="#">Windows 7</a></li>
+              <li><a class="dropdown-item" href="#">Mac OS X Tiger </a></li>
+            </ul>
+          
+        </div>
+      </div>
+
+        </div>
+
+        <!-- <div class="row mb-3"> -->
+          <!-- <div class="dropdown-center">
             <button class="btn border-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
               Select Your Home PC Operating System
             </button>
@@ -165,11 +201,48 @@
               <li><a class="dropdown-item" href="#">Windows 7</a></li>
               <li><a class="dropdown-item" href="#">Mac OS X Tiger </a></li>
             </ul>
-          </div>
-          </div>
+          </div> -->
+          <!-- </div> -->
 
 
-        </div>
+        <!-- </div> -->
+
+<!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<!-- <a href="#" class="modal-test" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</a> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+           <!-- Modal End -->
+
+
+
+
+
+
+
+
+
+
 
       </form>
     </div>

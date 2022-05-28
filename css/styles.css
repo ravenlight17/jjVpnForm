@@ -83,6 +83,16 @@ label, p{
     flex-direction: column;
 }
 
+#campPC{
+    width: 250px;
+}
+
+
+/* .modal{
+    display: contents;
+} */
+
+
 #footer_div{
     background-color:  #012d6b;
     height: 100px;

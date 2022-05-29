@@ -152,6 +152,8 @@
             <label for="campPC">Name of Campus Computer</label>
             <input type="text" class="form-control" id="campPC">
             <p>
+              
+              <!-- Button trigger modal -->
               <small class="text-start fst-italic mb-3">
                 <!---<a href="#" class="data-bs-toggle="modal"  data-bs-target="#myModal">-->
                   <a href="#" class="modal-test" data-bs-toggle="modal" data-bs-target="#exampleModal">How to find your computer name?</a>
@@ -218,15 +220,39 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">PC Instructions | MAC Instructions</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <h6><u>PC Instructions:</u> </h6>
+       <P>
+         <ol type="1">
+           <li>On the bottom left of the desktop in the search bar next to the START button type: <em>About your pc</em> then press <em>Enter</em>
+                <img src="img/step1.PNG" class="step1-img" alt="Desktop Searchbar">
+            </li>
+           <li>A new window will open. Look next to <em>Device Name</em>. The syntax would be: C##-####.
+           <li>Congratulations! You have now found your Computer Name on a Windows 10 device.</li>
+        </ol>
+       </p>
+       <h6><u>MAC Instructions:</u></h6>
+       <p>
+        <ol type="1">
+          <li>On the Mac, click the <em>Apple Menu</em> located in the upper left-hand corner of the screen:</li>
+          <li>Click on <em>System Preferences</em>
+           <p><img src="img/mac-step1.PNG" class="mac-img" alt="Apple Menu"></p> 
+          </li>
+          <li>Click on <em>Sharing</em>
+            <p><img src="img/mac-step2.PNG" class="mac-img" alt="System Preferences"></p>
+          </li>
+          <li>The computer name for your Mac appears at the top of Sharing preferences.
+            <p><img src="img/mac-step3.PNG" class="mac-img" alt="Sharing"></p>
+          </li>
+       </ol>
+       </p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
   </div>

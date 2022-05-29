@@ -99,6 +99,10 @@ label, p{
        
 }
 
+.step1-img, .mac-img{
+    width: 75%;
+    height: auto;
+}
 
 
 /* .footer-div{

@@ -84,7 +84,8 @@ label, p{
 }
 
 #campPC{
-    width: 250px;
+    width: 350px;
+    margin-top: 15px;
 }
 
 
@@ -92,18 +93,52 @@ label, p{
     display: contents;
 } */
 
+#nameCC{
+    display:inline-block;
+    width:50%;
+}
+
+
+#os-main{
+    width:50%;
+    display:inline-block;
+  }
+
+
+/* Modal link spacing  */
+
+#p-modal-link{
+    margin-top:5px; 
+}
+
+#exampleModalLabel{
+text-align: left;
+}
+
+
+#inputGroupPcOS{
+    width: 150px;
+}
+
+/* OS Dropdown  */
+
+.os-dpd-width{
+    width: 350px;
+}
+
+/* Modal images  */
+
+.step1-img, .mac-img{
+    width: 68%;
+    height: auto;
+}
+
 
 #footer_div{
     background-color:  #012d6b;
     height: 100px;
        
 }
-
-.step1-img, .mac-img{
-    width: 75%;
-    height: auto;
-}
-
 
 /* .footer-div{
     display: flex;

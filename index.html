@@ -93,7 +93,7 @@
       <form action="" class="yourRequest">
         <div class="row mb-3">
          <div class="col-12">
-          <p>The best phone number to reach you for installation</p>
+          <p>The best phone number to reach you for installation:</p>
           <div class="input-group mb-3 w-25">
             <span class="input-group-text" id="basic-addon1">
               <!-- Remove the SVG and add the CDN link to so you can use the  -->
@@ -109,21 +109,22 @@
           
           <div class="col-4">
           <div class="input-group mb-3 w-35">
-            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Select Building</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <label class="input-group-text" for="buildingGrp">Options</label>
+            <select class="form-select" id="buildingGrp">
+              <option selected>Buildings:</option>
+              <option value="1">New Building</option>
+              <option value="2">Haaren Hall</option>
+              <option value="3">BMW</option>
+              <option value="4">Westport</option>
             </select>
           </div>
         </div>
 
         <div class="col-4">
           <div class="input-group mb-3 w-35">
-            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Select Building</option>
+            <label class="input-group-text" for="flGrp">Options</label>
+            <select class="form-select" id="flGrp">
+              <option selected>Floors:</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
@@ -132,27 +133,31 @@
         </div>
         
         <div class="col-4">
-          <div class="input-group mb-3 w-35">
-            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Select Building</option>
+          <div class="form-group">
+            <!-- <label for="exampleFormControlInput1">Email address</label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Room#">
+          </div>
+          <!-- <div class="input-group mb-3 w-35">
+            <label class="input-group-text" for="rmGrp">Options</label>
+            <select class="form-select" id="rmGrp">
+              <option selected>Room#:</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
           </div>
-        </div>
+        </div> -->
         </div>
 
         <div class="row mb-3">
           
-          <div class="col-6 col-sm-12">
+          <div class="col-6 col-sm-12" id="nameCC">
           <div class="form-group">
             
-            <label for="campPC">Name of Campus Computer</label>
+            <label for="campPC">Name of Campus Computer:</label>
             <input type="text" class="form-control" id="campPC">
-            <p>
-              
+            <p id="p-modal-link">
+
               <!-- Button trigger modal -->
               <small class="text-start fst-italic mb-3">
                 <!---<a href="#" class="data-bs-toggle="modal"  data-bs-target="#myModal">-->
@@ -165,16 +170,20 @@
 
           </div>
         </div>
+
+  <!---------------------------------------------------------------------------------------------------------->
           <!-- IMPORTANT DONT DELETE -->
           <!-- <div class="col-sm-10 div-pcInput">
             <label for="pcHostName" class="col-sm-2 col-form-label labelPc">Name of Campus Computer:</label>
             <input type="email" class="form-control pcInput " id="pcHostName">
           </div> -->
           <!-- IMPORTANT DONT DELETE -->
-          
-          <div class="col-6 col-sm-12">
+   <!---------------------------------------------------------------------------------------------------------->
+
+   
+          <!-- <div class="col-6 col-sm-12" id="os-main">
           <div class="dropdown-center">
-            <label for="campPC">Select Your Home PC Operating System</label>
+            <label for="campPC" class="mb-3">Select Your Home PC Operating System</label>
             <button class="btn border-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
               Select One
             </button>
@@ -189,7 +198,20 @@
         </div>
       </div>
 
-        </div>
+        </div> -->
+
+       <div class="col-6 col-sm-12" id="os-main">
+              <label for="campPC" class="mb-3">Home Computer Operating System:</label>
+              <div class="input-group mb-3 w-35 os-dpd-width" >
+                <select class="form-select " id="inputGroupPcOS">
+                  <option selected>Select One</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+          </div>
+
+
 
         <!-- <div class="row mb-3"> -->
           <!-- <div class="dropdown-center">
@@ -220,11 +242,11 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">PC Instructions | MAC Instructions</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Campus Computer Instructions: <p><a href="#pcInst">PC Instructions</a> & <a href="#macInst">MAC Instructions</a></h5></p>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <h6><u>PC Instructions:</u> </h6>
+        <h6 id="pcInst"><u>PC Instructions:</u> </h6>
        <P>
          <ol type="1">
            <li>On the bottom left of the desktop in the search bar next to the START button type: <em>About your pc</em> then press <em>Enter</em>
@@ -234,7 +256,7 @@
            <li>Congratulations! You have now found your Computer Name on a Windows 10 device.</li>
         </ol>
        </p>
-       <h6><u>MAC Instructions:</u></h6>
+       <h6 id="macInst"><u>MAC Instructions:</u></h6>
        <p>
         <ol type="1">
           <li>On the Mac, click the <em>Apple Menu</em> located in the upper left-hand corner of the screen:</li>
@@ -289,6 +311,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
   <!-- BootStrap JS End-->
 </body>
 

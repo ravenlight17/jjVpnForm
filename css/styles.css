@@ -4,24 +4,141 @@
     box-sizing: border-box;
 }
 
+.body{
+    overflow-x:hidden;
+    max-width: 100%;
+}
+
+
 .text-secondary{
     font-size: small;
 }
 
 .dept-title {
-    color: darkblue;
+    color: #012d6b;
 }
+
+.vpn-request-head{
+    color: #00aeef;
+}
+
+/* .labelPc, .location, .number{
+    font-weight: 600;
+} */
+
+label, p{
+    font-weight: 600;
+}
+
 .btn-sm{
     color: white;
+   
+}
+
+.submit-btn{
+    background-color: #00aeef;
+}
+
+.inline{
+    display: inline-block;
+
+}
+
+/* .textbox{
+    width: ;
+} */
+
+/* .yourInfo{
+    margin-left:66px;
+} */
+
+.yourRequest{
+    margin-left:66px;
+}
+
+.div-pcInput{
+    display: flex;
 }
 
 
-.footer-div{
-    background-color:  rgb(1, 45, 107);
-    height: 75px;
-    
+.labelPc{
+    /* width: 25px;
+    flex-direction: column; */
+
+    width: 208px;
+    flex-direction: column;
+    margin-right: 25px;
+    /* margin-right: 204px; */
+    /* display: inline-block; */
+
 }
 
+.pcInput{
+    /* width: 275px;
+    margin-left: 25px;
+    flex-direction: column; */
+
+    width: 275px;
+    /* margin-left: -182px; */
+    flex-direction: column;
+}
+
+#campPC{
+    width: 350px;
+    margin-top: 15px;
+}
+
+
+/* .modal{
+    display: contents;
+} */
+
+#nameCC{
+    display:inline-block;
+    width:50%;
+}
+
+
+#os-main{
+    width:50%;
+    display:inline-block;
+  }
+
+
+/* Modal link spacing  */
+
+#p-modal-link{
+    margin-top:5px; 
+}
+
+#exampleModalLabel{
+text-align: left;
+}
+
+
+#inputGroupPcOS{
+    width: 150px;
+}
+
+/* OS Dropdown  */
+
+.os-dpd-width{
+    width: 350px;
+}
+
+/* Modal images  */
+
+.step1-img, .mac-img{
+    width: 68%;
+    height: auto;
+}
+
+
+#footer_div{
+    background-color:  #012d6b;
+    height: 100px;
+       
+}
 
 /* .footer-div{
     display: flex;

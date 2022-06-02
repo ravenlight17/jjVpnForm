@@ -9,60 +9,69 @@
   <!-- BootStrap CSS Start-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <!-- BootStrap CSS End-->
   <!-- CSS External -->
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <!-- CSS External End -->
 </head>
 
-<body class="bg-light">
+<body class="body bg-light">
   <main class="container">
     <div class="row">
       <div class="col-6">
         <img src="jpg/logo.png" class="mt-3" alt="John Jay Logo">
-        <h1 class="text-dark mt-3">
-          Request Form
-        </h1>
+        <h2 class="vpn-request-main text-dark mt-3">
+          VPN Request Form
+        </h2>
       </div>
       <div class="col-6">
-        <p class="text-secondary text-end mb-0">Welcome Tawny Smith| <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-          <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+        <p class="text-secondary text-end mb-0">Welcome Tawny Smith| <a href="#"><i class="bi bi-box-arrow-right"></i>
         </svg>Logout</a></p>
         <p class="dept-title text-end text-uppercase mb-0 fw-bold">Department of Information Technology</p>
-        <p class="text-info text-end text-uppercase fw-bold">Webcam Request Form</p>
+        <p class="vpn-request-head text-info text-end text-uppercase fw-bold">VPN Request Form</p>
       </div>
     </div>
 
     <div class="shadow p-3 mb-5 bg-body rounded">
       <div class="col-12">
-        <p class="fs-3">Your Information </p>
+        <h5>Your Information </h5>
         <hr>
       </div>
       <!-- Form -->
-      <form>
+      <form class="yourInfo">
         <div class="row mb-3 g-3">
-          <div class="col-2"></div>
-          <div class="col-5">
-              <label for="inputFirstName" class="col-sm-3 col-form-label fw-bold">First Name:</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control col-form-label" id="inputFirstName">
+          <!-- <div class="col-2"></div> -->
+          <div class="col-sm-6">
+              <!-- <label for="inputFirstName" class="col-sm-3 col-form-label">First Name:</label> -->
+
+              <div class="col-sm-10 div-pcInput">
+                <label for="fn" class="col-sm-2 col-form-label labelPc">First Name:</label>
+                <input type="text" class="form-control pcInput " id="fn">
               </div>
-              <label for="inputEmplid" class="col-sm-3 col-form-label fw-bold">Emplid:</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control col-form-label" id="inputEmplid">
+
+
+
+
+              <div class="inline col-sm-10">
+                <label for="inputFirstName" class="col-sm-3 col-form-label">First Name:</label>
+                <input type="text" style="width: 5px;" class="form-control col-form-label" id="inputFirstName">
               </div>
-              <label for="inputDept" class="col-sm-3 col-form-label fw-bold">Department:</label>
+              <label for="inputEmplid" class="col-sm-3 col-form-label">Emplid:</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control col-form-label" id="inputDept">
+                <input type="text" class="form-control col-form-label" id="inputEmplid">
+              </div>
+              <label for="inputDept" class="col-sm-3 col-form-label">Department:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control col-form-label" id="inputDept">
               </div>
           </div>
-          <div class="col-5">
-              <label for="inputLastName" class="col-sm-3 col-form-label fw-bold">Last Name:</label>
+          <div class="col-6">
+              <label for="inputLastName" class="col-sm-3 col-form-label">Last Name:</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control col-form-label" id="inputLastName">
+                <input type="text" class="form-control col-form-label" id="inputLastName">
               </div>
-              <label for="inputEmail" class="col-sm-3 col-form-label fw-bold">Email:</label>
+              <label for="inputEmail" class="col-sm-3 col-form-label">Email:</label>
               <div class="col-sm-10">
                 <input type="email" class="form-control col-form-label" id="inputEmail">
               </div>
@@ -79,45 +88,43 @@
     </div>
     <!-- End of Form One -->
     <div class="shadow p-3 mb-5 bg-body rounded">
-      <p class="fs-3">Your Request</p>
+      <h5>Your Request</h5>
       <hr>
       <form action="" class="yourRequest">
         <div class="row mb-3">
          <div class="col-12">
-          <p class="fw-bold">The best phone number to reach you for installation</p>
+          <p>The best phone number to reach you for installation:</p>
           <div class="input-group mb-3 w-25">
             <span class="input-group-text" id="basic-addon1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-              </svg>
+              <!-- Remove the SVG and add the CDN link to so you can use the  -->
+              <i class="bi bi-telephone-fill"></i>
             </span>
             <input type="number" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
           </div>
         </div>
         <div class="col-12">
-          <p class="location fw-bold">Requested Location of Webcam:</p>
+          <p class="location">Location of Campus Computer:</p>
         </div>
         <div class="row">
           
           <div class="col-4">
           <div class="input-group mb-3 w-35">
-            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Select Building</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <label class="input-group-text" for="buildingGrp">Options</label>
+            <select class="form-select" id="buildingGrp">
+              <option selected>Buildings:</option>
+              <option value="1">New Building</option>
+              <option value="2">Haaren Hall</option>
+              <option value="3">BMW</option>
+              <option value="4">Westport</option>
             </select>
           </div>
         </div>
 
         <div class="col-4">
           <div class="input-group mb-3 w-35">
-            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Select Building</option>
+            <label class="input-group-text" for="flGrp">Options</label>
+            <select class="form-select" id="flGrp">
+              <option selected>Floors:</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
@@ -126,34 +133,185 @@
         </div>
         
         <div class="col-4">
-          <div class="input-group mb-3 w-35">
-            <label class="input-group-text" for="inputGroupSelect01">Options</label>
-            <select class="form-select" id="inputGroupSelect01">
-              <option selected>Select Building</option>
+          <div class="form-group">
+            <!-- <label for="exampleFormControlInput1">Email address</label> -->
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Room#">
+          </div>
+          <!-- <div class="input-group mb-3 w-35">
+            <label class="input-group-text" for="rmGrp">Options</label>
+            <select class="form-select" id="rmGrp">
+              <option selected>Room#:</option>
               <option value="1">One</option>
               <option value="2">Two</option>
               <option value="3">Three</option>
             </select>
           </div>
+        </div> -->
         </div>
+
+        <div class="row mb-3">
+          
+          <div class="col-6 col-sm-12" id="nameCC">
+          <div class="form-group">
+            
+            <label for="campPC">Name of Campus Computer:</label>
+            <input type="text" class="form-control" id="campPC">
+            <p id="p-modal-link">
+
+              <!-- Button trigger modal -->
+              <small class="text-start fst-italic mb-3">
+                <!---<a href="#" class="data-bs-toggle="modal"  data-bs-target="#myModal">-->
+                  <a href="#" class="modal-test" data-bs-toggle="modal" data-bs-target="#exampleModal">How to find your computer name?</a>
+                </small>
+              </p>
+          
+
+
+
+          </div>
+        </div>
+
+  <!---------------------------------------------------------------------------------------------------------->
+          <!-- IMPORTANT DONT DELETE -->
+          <!-- <div class="col-sm-10 div-pcInput">
+            <label for="pcHostName" class="col-sm-2 col-form-label labelPc">Name of Campus Computer:</label>
+            <input type="email" class="form-control pcInput " id="pcHostName">
+          </div> -->
+          <!-- IMPORTANT DONT DELETE -->
+   <!---------------------------------------------------------------------------------------------------------->
+
+   
+          <!-- <div class="col-6 col-sm-12" id="os-main">
+          <div class="dropdown-center">
+            <label for="campPC" class="mb-3">Select Your Home PC Operating System</label>
+            <button class="btn border-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+              Select One
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+              <li><a class="dropdown-item" href="#">Windows 10 S</a></li>
+              <li><a class="dropdown-item" href="#">Windows 10</a></li>
+              <li><a class="dropdown-item" href="#">Windows 8/8.1</a></li>
+              <li><a class="dropdown-item" href="#">Windows 7</a></li>
+              <li><a class="dropdown-item" href="#">Mac OS X Tiger </a></li>
+            </ul>
+          
+        </div>
+      </div>
+
+        </div> -->
+
+       <div class="col-6 col-sm-12" id="os-main">
+              <label for="campPC" class="mb-3">Home Computer Operating System:</label>
+              <div class="input-group mb-3 w-35 os-dpd-width" >
+                <select class="form-select " id="inputGroupPcOS">
+                  <option selected>Select One</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+          </div>
+
+
+
+        <!-- <div class="row mb-3"> -->
+          <!-- <div class="dropdown-center">
+            <button class="btn border-secondary dropdown-toggle" type="button" id="dropdownCenterBtn" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Your Home PC Operating System
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownCenterBtn">
+              <li><a class="dropdown-item" href="#">Windows 10 S</a></li>
+              <li><a class="dropdown-item" href="#">Windows 10</a></li>
+              <li><a class="dropdown-item" href="#">Windows 8/8.1</a></li>
+              <li><a class="dropdown-item" href="#">Windows 7</a></li>
+              <li><a class="dropdown-item" href="#">Mac OS X Tiger </a></li>
+            </ul>
+          </div> -->
+          <!-- </div> -->
+
+
+        <!-- </div> -->
+
+<!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<!-- <a href="#" class="modal-test" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</a> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Campus Computer Instructions: <p><a href="#pcInst">PC Instructions</a> & <a href="#macInst">MAC Instructions</a></h5></p>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 id="pcInst"><u>PC Instructions:</u> </h6>
+       <P>
+         <ol type="1">
+           <li>On the bottom left of the desktop in the search bar next to the START button type: <em>About your pc</em> then press <em>Enter</em>
+                <img src="img/step1.PNG" class="step1-img" alt="Desktop Searchbar">
+            </li>
+           <li>A new window will open. Look next to <em>Device Name</em>. The syntax would be: C##-####.
+           <li>Congratulations! You have now found your Computer Name on a Windows 10 device.</li>
+        </ol>
+       </p>
+       <h6 id="macInst"><u>MAC Instructions:</u></h6>
+       <p>
+        <ol type="1">
+          <li>On the Mac, click the <em>Apple Menu</em> located in the upper left-hand corner of the screen:</li>
+          <li>Click on <em>System Preferences</em>
+           <p><img src="img/mac-step1.PNG" class="mac-img" alt="Apple Menu"></p> 
+          </li>
+          <li>Click on <em>Sharing</em>
+            <p><img src="img/mac-step2.PNG" class="mac-img" alt="System Preferences"></p>
+          </li>
+          <li>The computer name for your Mac appears at the top of Sharing preferences.
+            <p><img src="img/mac-step3.PNG" class="mac-img" alt="Sharing"></p>
+          </li>
+       </ol>
+       </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+           <!-- Modal End -->
+
+
+
+
+
+
+
+
+
+
+
       </form>
     </div>
    </main>
+
   <div class="row">
     <div class="col-12 mt-3 text-end px-5">
-  <button type="submit" class="btn btn-info btn-lg py-6 text-light">Request Webcam</button>
+  <button type="submit" class="submit-btn btn-info btn-lg py-6 text-light">Request VPN</button>
 </div>
 </div>
-<footer class="footer-div mt-5">
-<p class="pfooter text-end py-3 px-5">
-  <a href="#" class="doit">Developed by DoIT</a>
-</p>
+<footer class="mt-5" id="footer_div">
+    <p class="pfooter text-end py-3 px-5">
+      <a href="#" class="doit">Developed by DoIT</a>
+    </p>
 
 </footer>
   <!-- BootStrap JS Start-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
   <!-- BootStrap JS End-->
 </body>
 

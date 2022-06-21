@@ -110,12 +110,12 @@
           <div class="col-4">
           <div class="input-group mb-3 w-35">
             <label class="input-group-text" for="buildingGrp">Options</label>
-            <select class="form-select" id="buildingGrp">
-              <option selected>Buildings:</option>
-              <option value="1">New Building</option>
-              <option value="2">Haaren Hall</option>
-              <option value="3">BMW</option>
-              <option value="4">Westport</option>
+            <select class="form-select dropdown-toggle" id="buildingGrp">
+              <option selected id="bldg-default">Buildings:</option>
+              <option value="1" id="new-bldg">New Building</option>
+              <option value="2"id="harren-hall">Haaren Hall</option>
+              <option value="3" id="bldg-bmw">BMW</option>
+              <option value="4" id="bldg-wp">Westport</option>
             </select>
           </div>
         </div>
@@ -123,7 +123,7 @@
         <div class="col-4">
           <div class="input-group mb-3 w-35">
             <label class="input-group-text" for="flGrp">Options</label>
-            <select class="form-select" id="flGrp">
+            <select disabled class="form-select" id="flGrp">
               <option selected>Floors:</option>
               <option value="1">One</option>
               <option value="2">Two</option>
@@ -135,7 +135,7 @@
         <div class="col-4">
           <div class="form-group">
             <!-- <label for="exampleFormControlInput1">Email address</label> -->
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Room#">
+            <input type="text" class="form-control disabled" id="exampleFormControlInput1" placeholder="Room#">
           </div>
           <!-- <div class="input-group mb-3 w-35">
             <label class="input-group-text" for="rmGrp">Options</label>
@@ -151,7 +151,7 @@
 
         <div class="row mb-3">
           
-          <div class="col-6 col-sm-12" id="nameCC">
+          <div id="nameCC" class="col-6 col-sm-12" >
           <div class="form-group">
             
             <label for="campPC">Name of Campus Computer:</label>
@@ -169,6 +169,8 @@
 
 
           </div>
+
+          
         </div>
 
   <!---------------------------------------------------------------------------------------------------------->
@@ -250,7 +252,7 @@
        <P>
          <ol type="1">
            <li>On the bottom left of the desktop in the search bar next to the START button type: <em>About your pc</em> then press <em>Enter</em>
-                <img src="img/step1.PNG" class="step1-img" alt="Desktop Searchbar">
+                <img src="jpg/step1.PNG" class="step1-img" alt="Desktop Searchbar">
             </li>
            <li>A new window will open. Look next to <em>Device Name</em>. The syntax would be: C##-####.
            <li>Congratulations! You have now found your Computer Name on a Windows 10 device.</li>
@@ -261,13 +263,13 @@
         <ol type="1">
           <li>On the Mac, click the <em>Apple Menu</em> located in the upper left-hand corner of the screen:</li>
           <li>Click on <em>System Preferences</em>
-           <p><img src="img/mac-step1.PNG" class="mac-img" alt="Apple Menu"></p> 
+           <p><img src="jpg/mac-step1.PNG" class="mac-img" alt="Apple Menu"></p> 
           </li>
           <li>Click on <em>Sharing</em>
-            <p><img src="img/mac-step2.PNG" class="mac-img" alt="System Preferences"></p>
+            <p><img src="jpg/mac-step2.PNG" class="mac-img" alt="System Preferences"></p>
           </li>
           <li>The computer name for your Mac appears at the top of Sharing preferences.
-            <p><img src="img/mac-step3.PNG" class="mac-img" alt="Sharing"></p>
+            <p><img src="jpg/mac-step3.PNG" class="mac-img" alt="Sharing"></p>
           </li>
        </ol>
        </p>
@@ -307,12 +309,15 @@
     </p>
 
 </footer>
+
   <!-- BootStrap JS Start-->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+    
   <!-- BootStrap JS End-->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
